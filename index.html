@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EnsinAI - Conecte-se com os melhores professores particulares. Agende aulas online ou presenciais na disciplina que você precisa.">
+  <title>EnsinAI — Aulas Particulares Online</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#" class="navbar__logo" aria-label="EnsinAI - Página inicial">
+        <svg class="navbar__logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="#4F46E5"/>
+          <path d="M8 22V12l8-5 8 5v10l-8 5-8-5z" stroke="#fff" stroke-width="2" stroke-linejoin="round" fill="none"/>
+          <circle cx="16" cy="15" r="3" fill="#fff"/>
+        </svg>
+        <span>EnsinAI</span>
+      </a>
+
+      <nav class="navbar__nav" id="navMenu" aria-label="Menu principal">
+        <a href="#como-funciona" class="navbar__link">Como Funciona</a>
+        <a href="#funcionalidades" class="navbar__link">Funcionalidades</a>
+        <a href="#professores" class="navbar__link">Para Professores</a>
+        <a href="#depoimentos" class="navbar__link">Depoimentos</a>
+        <a href="#faq" class="navbar__link">FAQ</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <a href="#portal" class="btn btn--ghost">Entrar</a>
+        <a href="#portal" class="btn btn--primary btn--sm">Criar Conta</a>
+      </div>
+
+      <button class="navbar__hamburger" id="hamburgerBtn" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <span class="hero__badge">Plataforma #1 de Aulas Particulares</span>
+        <h1 class="hero__title">
+          Aprenda qualquer coisa,<br>
+          <span class="hero__title--accent">com quem realmente ensina.</span>
+        </h1>
+        <p class="hero__subtitle">
+          Encontre professores especialistas em diversas disciplinas, 
+          compare valores, agende aulas e evolua no seu ritmo — tudo em um só lugar.
+        </p>
+        <div class="hero__ctas">
+          <a href="https://portal.ensinai.com" class="btn btn--primary btn--lg" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 3h6v6M14 10l6.1-6.1M10 5H5a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2v-5"/></svg>
+            Acessar Portal
+          </a>
+          <a href="#download" class="btn btn--outline btn--lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 18V6M5 12l7 7 7-7"/></svg>
+            Baixar App
+          </a>
+        </div>
+        <div class="hero__stores">
+          <a href="#" class="hero__store-badge" aria-label="Disponível na App Store">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            App Store
+          </a>
+          <a href="#" class="hero__store-badge" aria-label="Disponível no Google Play">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.61 1.82L13.42 12 3.61 22.18c-.36-.2-.61-.57-.61-1V2.82c0-.43.25-.8.61-1zM14.84 13.42l2.17 2.17-7.6 4.33 5.43-6.5zM19.44 10.78l-2.43 1.39-2.35-2.17 2.35-2.17 2.43 1.39c.73.42.73 1.14 0 1.56zM9.41 4.08l7.6 4.33-2.17 2.17-5.43-6.5z"/></svg>
+            Google Play
+          </a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__illustration">
+          <div class="hero__card hero__card--1">
+            <img class="hero__card-avatar" src="https://i.pravatar.cc/44?img=47" alt="Prof. Ana Silva" width="44" height="44">
+            <div class="hero__card-info">
+              <span class="hero__card-name">Prof. Ana Silva</span>
+              <span class="hero__card-subject">Matemática</span>
+            </div>
+            <span class="hero__card-price">R$ 65/h</span>
+          </div>
+          <div class="hero__card hero__card--2">
+            <img class="hero__card-avatar" src="https://i.pravatar.cc/44?img=11" alt="Prof. Carlos Lima" width="44" height="44">
+            <div class="hero__card-info">
+              <span class="hero__card-name">Prof. Carlos Lima</span>
+              <span class="hero__card-subject">Física</span>
+            </div>
+            <span class="hero__card-price">R$ 55/h</span>
+          </div>
+          <div class="hero__card hero__card--3">
+            <img class="hero__card-avatar" src="https://i.pravatar.cc/44?img=25" alt="Prof. Maria Costa" width="44" height="44">
+            <div class="hero__card-info">
+              <span class="hero__card-name">Prof. Maria Costa</span>
+              <span class="hero__card-subject">Inglês</span>
+            </div>
+            <span class="hero__card-price">R$ 70/h</span>
+          </div>
+          <div class="hero__floating hero__floating--1">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+            <span>Aula agendada!</span>
+          </div>
+          <div class="hero__floating hero__floating--2">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <span>4.9</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__bg-shapes" aria-hidden="true">
+      <div class="hero__shape hero__shape--1"></div>
+      <div class="hero__shape hero__shape--2"></div>
+      <div class="hero__shape hero__shape--3"></div>
+    </div>
+  </section>
+
+  <!-- ========== SOCIAL PROOF BAR ========== -->
+  <section class="social-proof" aria-label="Estatísticas da plataforma">
+    <div class="container social-proof__inner">
+      <div class="social-proof__item">
+        <span class="social-proof__number" data-target="5000">0</span>
+        <span class="social-proof__label">Professores Ativos</span>
+      </div>
+      <div class="social-proof__item">
+        <span class="social-proof__number" data-target="42000">0</span>
+        <span class="social-proof__label">Alunos Cadastrados</span>
+      </div>
+      <div class="social-proof__item">
+        <span class="social-proof__number" data-target="180000">0</span>
+        <span class="social-proof__label">Aulas Realizadas</span>
+      </div>
+      <div class="social-proof__item">
+        <span class="social-proof__number" data-target="4.9" data-decimals="1">0</span>
+        <span class="social-proof__label">Avaliação Média</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== COMO FUNCIONA ========== -->
+  <section class="how-it-works" id="como-funciona">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-header__tag">Simples e Rápido</span>
+        <h2 class="section-header__title">Como Funciona</h2>
+        <p class="section-header__subtitle">Em 3 passos você já está aprendendo com o professor ideal.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step" data-animate>
+          <div class="step__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          </div>
+          <div class="step__number">01</div>
+          <h3 class="step__title">Busque</h3>
+          <p class="step__text">Pesquise por disciplina, assunto ou nome do professor. Filtre por preço, avaliação e disponibilidade.</p>
+        </div>
+        <div class="step__connector" aria-hidden="true"></div>
+        <div class="step" data-animate>
+          <div class="step__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          </div>
+          <div class="step__number">02</div>
+          <h3 class="step__title">Agende</h3>
+          <p class="step__text">Escolha o melhor horário na agenda do professor e confirme seu agendamento com poucos cliques.</p>
+        </div>
+        <div class="step__connector" aria-hidden="true"></div>
+        <div class="step" data-animate>
+          <div class="step__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+          </div>
+          <div class="step__number">03</div>
+          <h3 class="step__title">Aprenda</h3>
+          <p class="step__text">Assista sua aula online ou presencial. Avalie o professor e acompanhe sua evolução.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FUNCIONALIDADES ========== -->
+  <section class="features" id="funcionalidades">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-header__tag">Plataforma Completa</span>
+        <h2 class="section-header__title">Tudo que você precisa para aprender</h2>
+        <p class="section-header__subtitle">Ferramentas poderosas para alunos e professores em um único lugar.</p>
+      </div>
+
+      <div class="features__grid">
+        <div class="feature-card" data-animate>
+          <div class="feature-card__icon feature-card__icon--blue">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3 class="feature-card__title">Perfis Verificados</h3>
+          <p class="feature-card__text">Todos os professores passam por verificação. Veja formação, experiência e avaliações reais.</p>
+        </div>
+
+        <div class="feature-card" data-animate>
+          <div class="feature-card__icon feature-card__icon--purple">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>
+          </div>
+          <h3 class="feature-card__title">Agenda Inteligente</h3>
+          <p class="feature-card__text">Sistema de agendamento em tempo real. Sem conflitos, sem confusão — apenas horários que funcionam.</p>
+        </div>
+
+        <div class="feature-card" data-animate>
+          <div class="feature-card__icon feature-card__icon--green">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          </div>
+          <h3 class="feature-card__title">Chat Integrado</h3>
+          <p class="feature-card__text">Converse com o professor antes de agendar. Tire dúvidas, alinhe expectativas e combine detalhes.</p>
+        </div>
+
+        <div class="feature-card" data-animate>
+          <div class="feature-card__icon feature-card__icon--amber">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="feature-card__title">Pagamento Seguro</h3>
+          <p class="feature-card__text">Pagamento protegido. O professor só recebe após a aula ser realizada com sucesso.</p>
+        </div>
+
+        <div class="feature-card" data-animate>
+          <div class="feature-card__icon feature-card__icon--rose">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+          </div>
+          <h3 class="feature-card__title">Material de Apoio</h3>
+          <p class="feature-card__text">Professores compartilham materiais, exercícios e recursos diretamente na plataforma.</p>
+        </div>
+
+        <div class="feature-card" data-animate>
+          <div class="feature-card__icon feature-card__icon--teal">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 20V10M18 20V4M6 20v-4"/></svg>
+          </div>
+          <h3 class="feature-card__title">Acompanhe seu Progresso</h3>
+          <p class="feature-card__text">Dashboard com histórico de aulas, horas estudadas e evolução por disciplina.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PARA PROFESSORES ========== -->
+  <section class="for-teachers" id="professores">
+    <div class="container for-teachers__inner">
+      <div class="for-teachers__content">
+        <span class="section-header__tag">Para Professores</span>
+        <h2 class="section-header__title">Ensine do seu jeito,<br>ganhe o que merece.</h2>
+        <p class="for-teachers__text">
+          Crie seu perfil, defina seu valor por hora/aula e gerencie sua agenda. 
+          A EnsinAI cuida da tecnologia — você foca no que faz de melhor: ensinar.
+        </p>
+        <ul class="for-teachers__list">
+          <li class="for-teachers__list-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+            Defina seus preços e disponibilidade
+          </li>
+          <li class="for-teachers__list-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+            Receba alunos sem precisar de marketing
+          </li>
+          <li class="for-teachers__list-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+            Pagamentos garantidos e pontuais
+          </li>
+          <li class="for-teachers__list-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+            Dashboard com métricas e relatórios
+          </li>
+        </ul>
+        <a href="https://portal.ensinai.com" class="btn btn--primary btn--lg" target="_blank" rel="noopener">Quero Ensinar</a>
+      </div>
+      <div class="for-teachers__visual">
+        <div class="teacher-dashboard">
+          <div class="teacher-dashboard__header">
+            <span class="teacher-dashboard__greeting">Olá, Prof. Ana!</span>
+            <span class="teacher-dashboard__badge">Premium</span>
+          </div>
+          <div class="teacher-dashboard__stats">
+            <div class="teacher-dashboard__stat">
+              <span class="teacher-dashboard__stat-value">R$ 3.240</span>
+              <span class="teacher-dashboard__stat-label">Este mês</span>
+            </div>
+            <div class="teacher-dashboard__stat">
+              <span class="teacher-dashboard__stat-value">48</span>
+              <span class="teacher-dashboard__stat-label">Aulas</span>
+            </div>
+            <div class="teacher-dashboard__stat">
+              <span class="teacher-dashboard__stat-value">4.9</span>
+              <span class="teacher-dashboard__stat-label">Avaliação</span>
+            </div>
+          </div>
+          <div class="teacher-dashboard__schedule">
+            <span class="teacher-dashboard__schedule-title">Próximas aulas</span>
+            <div class="teacher-dashboard__lesson">
+              <span class="teacher-dashboard__lesson-time">14:00</span>
+              <span class="teacher-dashboard__lesson-name">Lucas M. — Cálculo I</span>
+            </div>
+            <div class="teacher-dashboard__lesson">
+              <span class="teacher-dashboard__lesson-time">16:00</span>
+              <span class="teacher-dashboard__lesson-name">Beatriz S. — Álgebra Linear</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== DISCIPLINAS ========== -->
+  <section class="subjects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-header__tag">Diversidade</span>
+        <h2 class="section-header__title">Disciplinas para todos os objetivos</h2>
+        <p class="section-header__subtitle">De reforço escolar a preparação para concursos — encontre o professor certo.</p>
+      </div>
+      <div class="subjects__grid">
+        <div class="subject-chip">Matemática</div>
+        <div class="subject-chip">Português</div>
+        <div class="subject-chip">Física</div>
+        <div class="subject-chip">Química</div>
+        <div class="subject-chip">Inglês</div>
+        <div class="subject-chip">Espanhol</div>
+        <div class="subject-chip">Biologia</div>
+        <div class="subject-chip">História</div>
+        <div class="subject-chip">Geografia</div>
+        <div class="subject-chip">Redação</div>
+        <div class="subject-chip">Programação</div>
+        <div class="subject-chip">Música</div>
+        <div class="subject-chip">Filosofia</div>
+        <div class="subject-chip">Direito</div>
+        <div class="subject-chip">Economia</div>
+        <div class="subject-chip subject-chip--accent">+50 disciplinas</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== DEPOIMENTOS ========== -->
+  <section class="testimonials" id="depoimentos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-header__tag">Depoimentos</span>
+        <h2 class="section-header__title">Quem usa, recomenda</h2>
+        <p class="section-header__subtitle">Veja o que alunos e professores dizem sobre a EnsinAI.</p>
+      </div>
+
+      <div class="testimonials__grid">
+        <div class="testimonial-card" data-animate>
+          <div class="testimonial-card__stars" aria-label="5 estrelas">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-card__text">"Consegui passar no vestibular graças às aulas de matemática. O professor era incrível e a plataforma tornou tudo muito fácil de organizar."</p>
+          <div class="testimonial-card__author">
+            <img class="testimonial-card__avatar" src="https://i.pravatar.cc/44?img=32" alt="Juliana Mendes" width="44" height="44">
+            <div>
+              <span class="testimonial-card__name">Juliana Mendes</span>
+              <span class="testimonial-card__role">Aluna — Vestibular</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-animate>
+          <div class="testimonial-card__stars" aria-label="5 estrelas">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-card__text">"Como professor, a EnsinAI mudou minha vida. Tenho uma agenda sempre cheia, recebo em dia e não preciso me preocupar com nada além de ensinar."</p>
+          <div class="testimonial-card__author">
+            <img class="testimonial-card__avatar" src="https://i.pravatar.cc/44?img=68" alt="Ricardo Torres" width="44" height="44">
+            <div>
+              <span class="testimonial-card__name">Ricardo Torres</span>
+              <span class="testimonial-card__role">Professor — Física</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-animate>
+          <div class="testimonial-card__stars" aria-label="5 estrelas">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-card__text">"Meu filho melhorou duas notas em inglês em apenas um mês! A facilidade de agendar e a qualidade dos professores são impressionantes."</p>
+          <div class="testimonial-card__author">
+            <img class="testimonial-card__avatar" src="https://i.pravatar.cc/44?img=44" alt="Fernanda Oliveira" width="44" height="44">
+            <div>
+              <span class="testimonial-card__name">Fernanda Oliveira</span>
+              <span class="testimonial-card__role">Mãe de aluno — Ensino Médio</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-header__tag">Dúvidas</span>
+        <h2 class="section-header__title">Perguntas Frequentes</h2>
+        <p class="section-header__subtitle">Encontre respostas para as dúvidas mais comuns.</p>
+      </div>
+
+      <div class="faq__list">
+        <details class="faq__item">
+          <summary class="faq__question">
+            Como funciona o cadastro de professor?
+            <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="faq__answer">
+            <p>Basta criar uma conta no portal, preencher seu perfil com formação e experiência, definir as disciplinas que leciona e configurar seu valor por hora/aula e disponibilidade. Após uma breve verificação, seu perfil estará visível para milhares de alunos.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">
+            Quanto custa para o aluno?
+            <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="faq__answer">
+            <p>O cadastro é gratuito. Você paga apenas pelo valor da aula definido por cada professor. Não há mensalidades ou taxas escondidas para alunos.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">
+            Posso cancelar uma aula agendada?
+            <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="faq__answer">
+            <p>Sim! Cancelamentos feitos com mais de 24 horas de antecedência têm reembolso integral. Cancelamentos tardios podem ter uma taxa de acordo com a política do professor.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">
+            As aulas são online ou presenciais?
+            <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="faq__answer">
+            <p>Ambas! Cada professor define se oferece aulas online, presenciais ou as duas modalidades. Você pode filtrar por tipo de aula na busca.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">
+            Como o professor recebe o pagamento?
+            <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="faq__answer">
+            <p>O pagamento é processado de forma segura pela plataforma. Após a confirmação da aula pelo aluno, o valor é liberado para o professor em até 3 dias úteis via PIX ou transferência bancária.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA FINAL ========== -->
+  <section class="cta-final" id="download">
+    <div class="container cta-final__inner">
+      <h2 class="cta-final__title">Pronto para começar?</h2>
+      <p class="cta-final__subtitle">Junte-se a milhares de alunos e professores. Crie sua conta gratuitamente ou baixe o app.</p>
+      <div class="cta-final__actions">
+        <a href="https://portal.ensinai.com" class="btn btn--white btn--lg" target="_blank" rel="noopener">
+          Acessar Portal Web
+        </a>
+        <a href="#" class="btn btn--outline-white btn--lg">
+          Baixar App Gratuito
+        </a>
+      </div>
+      <div class="cta-final__stores">
+        <a href="#" class="hero__store-badge hero__store-badge--white" aria-label="Disponível na App Store">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          App Store
+        </a>
+        <a href="#" class="hero__store-badge hero__store-badge--white" aria-label="Disponível no Google Play">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.61 1.82L13.42 12 3.61 22.18c-.36-.2-.61-.57-.61-1V2.82c0-.43.25-.8.61-1zM14.84 13.42l2.17 2.17-7.6 4.33 5.43-6.5zM19.44 10.78l-2.43 1.39-2.35-2.17 2.35-2.17 2.43 1.39c.73.42.73 1.14 0 1.56zM9.41 4.08l7.6 4.33-2.17 2.17-5.43-6.5z"/></svg>
+          Google Play
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="navbar__logo" aria-label="EnsinAI">
+          <svg class="navbar__logo-icon" width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="#4F46E5"/>
+            <path d="M8 22V12l8-5 8 5v10l-8 5-8-5z" stroke="#fff" stroke-width="2" stroke-linejoin="round" fill="none"/>
+            <circle cx="16" cy="15" r="3" fill="#fff"/>
+          </svg>
+          <span>EnsinAI</span>
+        </a>
+        <p class="footer__tagline">Conectando quem quer aprender com quem sabe ensinar.</p>
+      </div>
+
+      <div class="footer__links">
+        <div class="footer__column">
+          <h4 class="footer__column-title">Plataforma</h4>
+          <a href="#como-funciona" class="footer__link">Como Funciona</a>
+          <a href="#funcionalidades" class="footer__link">Funcionalidades</a>
+          <a href="#professores" class="footer__link">Para Professores</a>
+          <a href="#faq" class="footer__link">FAQ</a>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__column-title">Legal</h4>
+          <a href="#" class="footer__link">Termos de Uso</a>
+          <a href="#" class="footer__link">Privacidade</a>
+          <a href="#" class="footer__link">Cookies</a>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__column-title">Contato</h4>
+          <a href="mailto:contato@ensinai.com" class="footer__link">contato@ensinai.com</a>
+          <a href="#" class="footer__link">Central de Ajuda</a>
+          <a href="#" class="footer__link">Blog</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>&copy; 2026 EnsinAI. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
